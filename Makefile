@@ -1,5 +1,5 @@
 build:
-	cc *.c -g -o vpn
+	cc src/*.c -O3 -o vpn
 
 clean:
 	rm vpn
