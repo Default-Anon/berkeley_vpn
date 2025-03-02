@@ -22,15 +22,16 @@
 #define HOST_NAME "1.1.1.129"
 #define BIND_HOST "0.0.0.0"
 #define PORT 54321
+#define MAGIC_CRYPT_NUMBER 0b11011011
 
-void v_exec(char *command);
+void v_exec (char *command);
 
-void v_create_network_interface(void);
+void v_create_network_interface (void);
 
-void v_setup_route_table(void);
+void v_setup_route_table (void);
 
-void v_cleanup_route_table(void);
+void v_cleanup_route_table (void);
 
-int fd_setup_tun_device(void);
+int fd_setup_tun_device (void);
 
-int create_connection(struct sockaddr *addr, socklen_t *addrlen);
+int create_connection (struct sockaddr *addr, socklen_t *addrlen);
