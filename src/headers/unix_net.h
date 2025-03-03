@@ -19,10 +19,10 @@
 #define _CRITICAL_ERROR_ -1
 #define MTU 1400
 #define INTERFACE_NAME "tun0"
-#define HOST_NAME "122.34.9.3"
+#define HOST_NAME "1.12.222.103"
 #define BIND_HOST "0.0.0.0"
 #define PORT 54321
-#define MAGIC_CRYPT_NUMBER 0b11011011
+#define MAGIC_CRYPT_NUMBER 0b11000010
 
 // #define _UBUNTU_
 #define _DEBIAN_
