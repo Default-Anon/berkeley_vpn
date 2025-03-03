@@ -1,3 +1,29 @@
+/*
+*License
+
+The MIT License (MIT)
+
+Copyright (c) 2016 lxd.me
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*
+*/
+
 #ifndef __UNIX_NET_H__
 #define __UNIX_NET_H__
 #include <arpa/inet.h>
@@ -19,10 +45,10 @@
 /* -------------------------------------------------------------*/
 /* CHANGE IT AS YOU WISH FOR YOUR SETUP                         */
 /* -------------------------------------------------------------*/
-#define HOST_NAME "85.192.28.206" //|
-#define PORT 51288                //|
-#define MTU 1450                  //| MAX CAN BE 1518 bytes ETH!*/
-#define INTERFACE_NAME "tun0"     //|
+#define HOST_NAME "22.12.33.134" //|
+#define PORT 54323               //|
+#define MTU 1450                 //| MAX CAN BE 1518 bytes ETH!*/
+#define INTERFACE_NAME "tun0"    //|
 /* -------------------------------------------------------------*/
 
 #define BIND_HOST "0.0.0.0"
