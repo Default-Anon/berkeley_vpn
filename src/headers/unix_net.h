@@ -19,19 +19,22 @@
 #define _CRITICAL_ERROR_ -1
 #define MTU 1400
 #define INTERFACE_NAME "tun0"
-#define HOST_NAME "1.1.1.129"
+#define HOST_NAME "122.34.9.3"
 #define BIND_HOST "0.0.0.0"
 #define PORT 54321
 #define MAGIC_CRYPT_NUMBER 0b11011011
 
-void v_exec (char *command);
+// #define _UBUNTU_
+#define _DEBIAN_
 
-void v_create_network_interface (void);
+void v_exec(char *command);
 
-void v_setup_route_table (void);
+void v_create_network_interface(void);
 
-void v_cleanup_route_table (void);
+void v_setup_route_table(void);
 
-int fd_setup_tun_device (void);
+void v_cleanup_route_table(void);
 
-int create_connection (struct sockaddr *addr, socklen_t *addrlen);
+int fd_setup_tun_device(void);
+
+int create_connection(struct sockaddr *addr, socklen_t *addrlen);
