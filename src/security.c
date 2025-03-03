@@ -7,8 +7,6 @@ int i_encrypt(unsigned char *plain_text, unsigned char *cipher_text,
   unsigned char *plain_text_ptr = plain_text;
   unsigned char *cipher_text_ptr = cipher_text;
   while (plain_text_sz / AES_BLOCK_SIZE) {
-    /* unsigned char ivec[AES_BLOCK_SIZE];
-     memcpy(ivec, crypt.IV, AES_BLOCK_SIZE);*/
     memcpy(crypt.indata, plain_text_ptr, AES_BLOCK_SIZE);
     plain_text_ptr += AES_BLOCK_SIZE;
     AES_cfb128_encrypt(crypt.indata, crypt.outdata, AES_BLOCK_SIZE, &crypt.key,
@@ -34,8 +32,6 @@ int i_decrypt(unsigned char *cipher_text, unsigned char *plain_text,
   unsigned char *plain_text_ptr = plain_text;
   unsigned char *cipher_text_ptr = cipher_text;
   while (cipher_text_sz / AES_BLOCK_SIZE) {
-    /*   unsigned char ivec[AES_BLOCK_SIZE];
-       memcpy(ivec, IV, AES_BLOCK_SIZE);*/
     memcpy(crypt.outdata, cipher_text_ptr, AES_BLOCK_SIZE);
     cipher_text_ptr += AES_BLOCK_SIZE;
     AES_cfb128_encrypt(crypt.outdata, crypt.decryptdata, AES_BLOCK_SIZE,

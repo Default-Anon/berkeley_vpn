@@ -20,7 +20,7 @@
 /* CHANGE IT AS YOU WISH FOR YOUR SETUP                         */
 /* -------------------------------------------------------------*/
 #define HOST_NAME "85.192.28.206" //|
-#define PORT 54321                //|
+#define PORT 51288                //|
 #define MTU 1450                  //| MAX CAN BE 1518 bytes ETH!*/
 #define INTERFACE_NAME "tun0"     //|
 /* -------------------------------------------------------------*/
