@@ -125,7 +125,7 @@ int main(int argc, char **argv) {
     timer.tv_usec = 100;
     while (1) {
       copy = master;
-      if (select(max_fd, &copy, NULL, NULL, &timer) == -1) {
+      if (select(max_fd, &copy, NULL, NULL, NULL) == -1) {
         fprintf(stderr, "select error %d: %s\n", errno, strerror(errno));
       }
       if (FD_ISSET(tun_fd, &copy)) {

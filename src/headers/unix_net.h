@@ -45,10 +45,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /* -------------------------------------------------------------*/
 /* CHANGE IT AS YOU WISH FOR YOUR SETUP                         */
 /* -------------------------------------------------------------*/
-#define HOST_NAME "22.12.33.134" //|
-#define PORT 54323               //|
-#define MTU 1450                 //| MAX CAN BE 1518 bytes ETH!*/
-#define INTERFACE_NAME "tun0"    //|
+#define HOST_NAME "85.192.28.206" //|
+#define PORT 34572                //|
+#define MTU 1450                  //| MAX CAN BE 1518 bytes ETH!*/
+#define INTERFACE_NAME "tun0"     //|
 /* -------------------------------------------------------------*/
 
 #define BIND_HOST "0.0.0.0"
