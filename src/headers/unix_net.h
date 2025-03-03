@@ -1,6 +1,5 @@
 #ifndef __UNIX_NET_H__
 #define __UNIX_NET_H__
-#endif
 #include <arpa/inet.h>
 #include <errno.h>
 #include <ifaddrs.h>
@@ -16,16 +15,26 @@
 
 #define _AS_CLIENT
 // #define _AS_SERVER
-#define _CRITICAL_ERROR_ -1
-#define MTU 1400
-#define INTERFACE_NAME "tun0"
-#define HOST_NAME "1.12.222.103"
+
+/* -------------------------------------------------------------*/
+/* CHANGE IT AS YOU WISH FOR YOUR SETUP                         */
+/* -------------------------------------------------------------*/
+#define HOST_NAME "85.192.28.206" //|
+#define PORT 54321                //|
+#define MTU 1450                  //| MAX CAN BE 1518 bytes ETH!*/
+#define INTERFACE_NAME "tun0"     //|
+/* -------------------------------------------------------------*/
+
 #define BIND_HOST "0.0.0.0"
-#define PORT 54321
-#define MAGIC_CRYPT_NUMBER 0b11000010
+
+/* -------------------------------------------------------------*/
+/* If you install all requirments, don't touch it all must work */
 
 // #define _UBUNTU_
 #define _DEBIAN_
+/* -------------------------------------------------------------*/
+
+#define _CRITICAL_ERROR_ -1
 
 void v_exec(char *command);
 
@@ -38,3 +47,5 @@ void v_cleanup_route_table(void);
 int fd_setup_tun_device(void);
 
 int create_connection(struct sockaddr *addr, socklen_t *addrlen);
+
+#endif
